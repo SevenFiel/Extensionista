@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icone.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Tech Seguro</title>
+</head>
+
+<body>
+    <main>
+        <!-- HEADER - Contendo um menu de navegação com 4 links internos -->
+        <header>
+            <nav class="nav-bar">
+                <a href="#home"><img class="logo" src="img/logo2.png" alt="logo tech seguro"></a>
+                <div class="menu">
+                    <a href="#home">Home</a>
+                    <a href="#seg-online">Segurança Online</a>
+                    <a href="#form-google">Quiz</a>
+                    <a href="#sobre-nos">Sobre Nós</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="mobile-menu-icon"> <!--icone do menu mobile-->
+                    <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.png" alt=""></button>
+                </div>
+            </nav>
+
+            <!--definindo lista do menu-->
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#seg-online">Segurança Online</a></li>
+                    <li><a href="#form-google">Quiz</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- home -->
+        <section id="home">
+            <div class="imgTech">
+                <img src="img/Background1.png" alt="imagem tech seguro">
+            </div>
+        </section>
+
+        <!-- conteúdo cards-->
+        <section id="seg-online">
+            <h1>Segurança Online</h1>
+            <div class="content-cards">
+                <!-- Cartão 1 -->
+                <div class="card">
+                    <img src="/img/vpn.jpg" alt="Vpn">
+                    <h3>Aprenda mais sobre VPN</h3>
+                    <p>Conexão segura online que protege sua privacidade e dados. Oculta seu IP e permite acessar redes
+                        restritas. Ideal para segurança em Wi-Fi público e privacidade online.</p>
+                    <a href="#conteudo" class="saiba-mais">Saiba Mais</a>
+                </div>
+
+
+                <!-- Cartão 2 -->
+                <div class="card">
+                    <img src="/img/antvirus.jpg" alt="Antivirus">
+                    <h3>Aprenda mais sobre AntiVirus</h3>
+                    <p>Software que protege seu computador contra vírus, malware e ameaças online. Escaneia e remove
+                        arquivos maliciosos, mantendo seu dispositivo seguro. Essencial para proteger sua privacidade e
+                        manter seu sistema funcionando sem problemas.</p>
+                    <a href="#conteudo2" class="saiba-mais">Saiba Mais</a>
+                </div>
+
+                <!-- Cartão 3 -->
+                <div class="card">
+                    <img src="/img/gerenciador_de_senha.jpg" alt="Ger. de Senha">
+                    <h3>Gerenciador de senhas</h3>
+                    <p>Aplicativo que armazena e protege suas senhas de forma segura. Gera senhas fortes e únicas para
+                        cada conta online, eliminando o risco de usar senhas fracas ou repetidas. Facilita o acesso
+                        seguro aos seus serviços online e protege contra ataques de hackers e roubo de identidade.</p>
+                    <a href="#conteudo3" class="saiba-mais">Saiba Mais</a>
+                </div>
+
+                <!-- Cartão 4 -->
+                <div class="card">
+                    <img src="/img/adblocker.png" alt="AdBlocker">
+                    <h3>Bloqueador de Anúncios</h3>
+                    <p>Muitos anúncios online contêm rastreadores de terceiros, que coletam dados sobre seus hábitos de navegação para fins de marketing e análise. Bloqueadores de anúncios bloqueiam esses rastreadores, ajudando a proteger sua privacidade online. Alguns anúncios online também  podem ser veículos para malware, como vírus, spyware e ransomware.</p>
+                    <a href="#conteudo4" class="saiba-mais">Saiba Mais</a>
+                </div>
+
+                <!-- Cartão 5 -->
+                <div class="card">
+                    <img src="/img/email.png" alt="Phishing">
+                    <h3>Alerta de Phishing: Proteja suas Informações Online</h3>
+                    <p>Phishing é uma técnica usada por cibercriminosos para enganar as pessoas e obter informações
+                        confidenciais, como senhas e números de cartão de crédito. Eles geralmente enviam emails ou
+                        mensagens falsas, fingindo ser de empresas legítimas, e pedem que você clique em links
+                        maliciosos ou compartilhe informações pessoais. Esteja atento para não cair nessas armadilhas e
+                        proteja sua privacidade online.</p>
+                    <a href="#conteudo5" class="saiba-mais">Saiba Mais</a>
+                </div>
+
+                <!-- Cartão 6 -->
+                <div class="card">
+                    <img src="/img/wifi.jpg" alt="wifi">
+                    <h3>Segurança em Wi-Fi Público: Proteja sua Privacidade Online!</h3>
+                    <p>Ao utilizar redes Wi-Fi públicas, como as encontradas em cafés, aeroportos e hotéis, é essencial
+                        proteger sua privacidade. Evite compartilhar informações sensíveis, como senhas e dados
+                        bancários. Utilize uma VPN para criptografar sua conexão e evitar acesso não autorizado</p>
+                    <a href="#conteudo6" class="saiba-mais">Saiba Mais</a>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+
+        <!-- 1 CONTEUDO VPN -->
+        <section id="conteudo">
+            <h3>#1 VPN (Rede Virtual Privada)</h3>
+            <img src="img/vpn.jpg" alt="Vpn">
+            <p>Usar uma VPN (Rede Virtual Privada) é crucial nos dias de hoje devido à crescente preocupação com a
+                segurança e privacidade online. Uma VPN oferece uma série de benefícios importantes para os usuários da
+                internet. Ela protege a privacidade online ao criptografar o tráfego de internet, impedindo que
+                bisbilhoteiros, como hackers, provedores de serviços de internet (ISPs) e agências governamentais,
+                espiem ou rastreiem a atividade online de um usuário. Além disso, uma VPN oferece segurança em redes
+                Wi-Fi públicas, protegendo os dados contra ameaças de segurança. Permite também contornar restrições
+                geográficas e censura na internet, permitindo o acesso a conteúdo bloqueado em diferentes regiões do
+                mundo. Além disso, uma VPN oferece anonimato online, ocultando o endereço IP real do usuário e
+                garantindo uma conexão segura em redes corporativas. Em resumo, uma VPN é uma ferramenta essencial para
+                proteger a segurança e a privacidade online, garantindo uma experiência de internet mais segura e livre.
+            </p>
+            <p>Conheça o <a href="https://protonvpn.com/" target="_blank">ProtonVPN.</a> <br> ProtonVPN oferece uma
+                versão gratuita que é limitada em recursos, mas ainda oferece criptografia forte e sem registro de
+                atividades. Ela tem servidores em três países e oferece uma opção de conexão rápida.</p>
+        </section>
+        <hr>
+
+        <!-- 2 CONTEUDO ANTIVIRUS -->
+        <section id="conteudo2">
+            <h3>#2 Uso de Antivírus e Antimalware</h3>
+            <img src="/img/antvirus.jpg" alt="Antivirus">
+            <p>A utilização de antivírus e antimalware desempenha um papel fundamental na proteção da segurança
+                cibernética dos dispositivos. Estes softwares são projetados para identificar, bloquear e remover
+                ameaças potenciais, tais como vírus, trojans, worms e spyware, que podem comprometer a integridade dos
+                dados, roubar informações sensíveis e danificar o sistema operacional. Além disso, os antivírus e
+                antimalware ajudam a prevenir ataques de ransomware, que sequestram arquivos do usuário em troca de
+                resgate. Ao manter esses programas atualizados, os usuários podem fortalecer suas defesas contra ameaças
+                cibernéticas em constante evolução, garantindo assim a segurança e privacidade de suas informações
+                digitais.
+            </p>
+            <p>Antivirus que recomendamos: <a
+                    href="https://www.avg.com/pt-br/ppc/protection-offer-comparison-04?ppc_code=013&ppc=a&om_sem_cid=hho_sem_sy:~pt-br_bav_sch_brn_exc_bng_dtp~&gclid=b16d8fbfb2a416101449e9a20b10b255&gclsrc=3p.ds&msclkid=b16d8fbfb2a416101449e9a20b10b255&utm_source=bing&utm_medium=cpc&utm_campaign=pt-br_bav_sch_brn_exc_bng_dtp&utm_term=avg%20antivirus%20free&utm_content=top-avg_antivirus_free-exact#pc">AVG
+                    AntiVirus Free.</a> <br> O AVG oferece proteção contra uma variedade de ameaças cibernéticas,
+                incluindo vírus, spyware e ransomware, além de ferramentas de otimização do sistema.</p>
+            <p>Outra opção: <a href="https://www.bitdefender.com.br/solutions/free.html">Bitdefender Antivirus Free
+                    Edition</a> <br> Oferece proteção contra malware em tempo real, utilizando tecnologia de nuvem para
+                identificar e bloquear ameaças, com impacto mínimo no desempenho do sistema.</p>
+        </section>
+        <hr>
+
+
+        <!-- 3 CONTEUDO GERENCIADOR -->
+        <section id="conteudo3">
+            <h3>#3 Senhas Fortes e Gerenciamento de Credenciais</h3>
+            <img src="img/gerenciador_de_senha.jpg" alt="Ger. de Senha">
+            <p>A criação e gerenciamento adequados de senhas são fundamentais para proteger informações confidenciais
+                e garantir a segurança digital. Senhas fortes, compostas por uma combinação de letras, números e
+                caracteres
+                especiais, dificultam que invasores adivinhem ou quebrem a senha através de ataques de força bruta.
+                Além disso, o uso de senhas únicas para cada conta reduz o impacto de violações de segurança em um único
+                serviço. O gerenciamento de senhas por meio de um gerenciador confiável também simplifica o processo e
+                promove
+                melhores práticas de segurança. Conscientizar sobre a importância de criar senhas robustas e únicas,
+                juntamente
+                com o uso de gerenciadores de senhas, é essencial para proteger dados pessoais e profissionais contra
+                ameaças cibernéticas.
+            </p>
+            <p>Conheça o <a href="https://bitwarden.com/" target="_blank">BitWarder.</a> O seu gerenciador de senhas
+                confiável.<br> <br>
+                O Bitwarden é um gerenciador de senhas de código aberto, oferecendo armazenamento seguro de senhas e
+                informações confidenciais com criptografia de ponta a ponta, acessível em várias plataformas.</p>
+        </section>
+        <hr>
+
+        <!-- 4 CONTEUDO SENHAS -->
+        <section id="conteudo4">
+            <h3>#4 Bloqueador de Anúncios</h3>
+            <img src="img/adblocker.png" alt="AdBlocker">
+            <p>Como o próprio nome já diz, bloqueadores de anúncios são ferramentas que impedem a exibição de anúncios enquanto se navega na internet, além de melhorarem a experiência de navegação, reduzir a distração, acelerar o carregamento das páginas e ajudar a proteger a privacidade bloqueando anúncios e rastreadores de terceiros. <br><br> Como bloquear anúncios:
+            </p>
+            <ol>
+                <li>Usando extensões de navegador: Instale extensões como <a href="https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?pli=1" target="_blank">uBlock Origin</a> ou <a href="https://chromewebstore.google.com/detail/adblock-plus-bloqueador-d/cfhdojbkjhnklbpkdaibdccddilifddb?hl=pt-BR" target="_blank">Adblock Plus</a> no seu navegador. Essas extensões bloqueiam automaticamente a exibição de anúncios enquanto você navega na internet.</li>
+                <li>Aplicativos de terceiros: Existem aplicativos de terceiros disponíveis para bloquear anúncios em dispositivos móveis, como Blokada para Android e AdGuard para iOS.</li>
+            </ol>
+            <p> Seguindo essa dica você aumentará sua segurança online reduzindo o risco de exposição a anúncios maliciosos, como os que contêm malware. Também protegerá sua privacidade, evitando que rastreadores de terceiros coletem dados sobre suas atividades na web. A economia de dados e tempo é outro benefício, já que os anúncios consomem largura de banda e podem retardar o carregamento das páginas
+            </p>
+        </section>
+        <hr>
+
+        <!-- 5 CONTEUDO PISHING -->
+        <section id="conteudo5">
+            <h3>#5 Como se proteger de Phishing?</h3>
+            <img src="img/email.png" alt="Phishing">
+            <p>Para se proteger do phishing e proteger suas informações online, aqui estão algumas práticas importantes:
+            </p>
+            <ol>
+                <li>Esteja Atento aos E-mails Suspeitos: Verifique cuidadosamente os e-mails que solicitam dados
+                    pessoais ou financeiros.</li>
+                <li>Não Clique em Links Suspeitos: Evite clicar em links de e-mails, mensagens instantâneas ou redes
+                    sociais que pareçam suspeitos. Se você não reconhece o remetente é melhor evitar clicar nele.</li>
+                <li>Verifique a URL do Site: Antes de inserir informações confidenciais, verifique se a URL é legítima.
+                    Certifique-se de que a conexão é segura (https://) e de que o site possui um certificado SSL válido.
+                </li>
+                <li>Mantenha o Software Atualizado: Mantenha navegadores da web e aplicativos atualizados com as últimas
+                    atualizações de segurança. Isso ajuda a proteger contra vulnerabilidades conhecidas que os golpistas
+                    podem explorar.</li>
+                <li>Educando-se e Educando Outros: Esteja sempre atualizado sobre os métodos mais recentes de phishing e
+                    compartilhe essas informações com amigos, familiares e colegas para ajudá-los a permanecer seguros
+                    online.</li>
+            </ol>
+            <p>Ademais, existem várias ferramentas e programas disponíveis para ajudar a proteger contra phishing. Aqui
+                estão alguns dos mais comuns: Antivirus, Navegadores Web com Proteção contra Phishing, Filtros de
+                E-mail, Gerenciadores de Senhas, etc.
+            </p>
+        </section>
+        <hr>
+
+        <!-- 6 CONTEUDO WIFI -->
+        <section id="conteudo6">
+            <h3>#6 Segurança em Wi-fi Público</h3>
+            <img src="img/wifi.jpg" alt="wifi">
+            <p>Quando se trata de segurança em redes Wi-Fi públicas, é essencial estar ciente dos riscos e adotar
+                medidas para proteger seus dados. Redes Wi-Fi públicas são frequentemente alvos de ataques cibernéticos,
+                tornando os usuários vulneráveis a ameaças como ataques de phishing, interceptação de dados e malware.
+                Para se proteger enquanto usa Wi-Fi público, é recomendável:
+            </p>
+            <ol>
+                <li>Evitar Transações Sensíveis: Evite acessar informações sensíveis, como informações bancárias ou
+                    senhas, em redes Wi-Fi públicas. Esses dados podem ser interceptados por hackers.</li>
+                <li>Desativar Compartilhamento de Arquivos: Desative o compartilhamento de arquivos quando estiver
+                    conectado a uma rede Wi-Fi pública para evitar que outras pessoas acessem seus arquivos pessoais.
+                </li>
+                <li>Usar uma VPN: Uma VPN (Rede Virtual Privada) cria um túnel criptografado entre seu dispositivo e a
+                    internet, protegendo seus dados contra bisbilhoteiros. Ao usar uma VPN em redes Wi-Fi públicas, seus
+                    dados permanecem seguros e privados.</li>
+            </ol>
+            <p>Aqui estão dois exemplos de softwares para desktop e dispositivos móveis que podem ajudar a detectar
+                ameaças em redes Wi-Fi públicas:<br> 1 - <a href="https://www.wireshark.org/" target="_blank">
+                    Wireshark</a> (Desktop) <br> 2 - <a
+                    href="https://play.google.com/store/apps/details?id=com.overlook.android.fing&pli=1"
+                    target="_blank">Fing - Network Tools</a> (Mobile)</p>
+        </section>
+        <hr>
+
+        <section id="form-google">
+            <div class="form-h2">
+                <h2>Teste seu novo conhecimento!</h2>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScSVaHZjbg1QesdDXAtDY-XvoWpBnqzFOlAqcHls1PvxtcV3w/viewform?usp=sf_link" target="_blank" class="button">Clique Aqui</a>
+                <h3>Ou responda abaixo:</h3>
+            </div>
+            <div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSVaHZjbg1QesdDXAtDY-XvoWpBnqzFOlAqcHls1PvxtcV3w/viewform?usp=sf_link"></iframe>
+            </div>
+        </section>
+        <hr>
+
+
+        <!-- Conteúdo sobre nós -->
+        <section id="sobre-nos">
+            <h3>Sobre Nós</h3>
+            <p>O Tech Seguro é uma iniciativa dedicada a promover a conscientização e proteção contra ameaças cibernéticas. Nossa missão é capacitar os usuários da internet com o conhecimento e as ferramentas necessárias para navegarem com segurança no mundo digital em constante evolução.</p>
+            <h3>Objetivos</h3>
+            <ul>
+                <li>Educar usuários sobre as principais ameaças cibernéticas e como se proteger contra elas.</li>
+                <li>Desenvolver e disponibilizar recursos e ferramentas de segurança online acessíveis a todos os públicos.</li>
+                <li>Aprimorar constantemente nossa expertise em segurança cibernética e compartilhá-la de forma acessível com nossos usuários.</li>
+            </ul>
+
+            <h3>Equipe</h3>
+            <p>O Tech Seguro é composto por estudantes de Análise e Desenvolvimento de Sistemas apaixonados por segurança cibernética. Desde desenvolvedores de software até entusiastas de tecnologia, cada membro contribui com suas habilidades únicas para o sucesso do projeto, trazendo perspectivas valiosas e conhecimentos técnicos para aprimorar nossa plataforma de segurança online.</p>
+
+            <h3>Compromisso com a Segurança</h3>
+            <p>Acreditamos firmemente na importância da segurança cibernética para proteger informações pessoais e garantir uma experiência online segura para todos. Nosso compromisso é fornecer recursos confiáveis e atualizados para ajudar os usuários a protegerem sua privacidade e segurança online, mantendo-se sempre atualizados sobre as últimas ameaças e soluções disponíveis.</p>
+            </section>
+        <hr>
+
+        <!-- CONTATO - Contendo um formulário do tipo texto/email para entrar em contato via E-mail -->
+        <section id="contact">
+            <div class="contato">
+                <h2>Nos ajude a melhorar!</h2>
+                <form id="enviar-msg" action="https://formspree.io/f/moqgradb" method="post">
+                    <label>Nome:</label>
+                    <input type="text" id="name" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                    <label>Mensagem:</label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off"></textarea>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- RODAPÉ - FIM DA PÁGINA -->
+        <footer>
+            <p>Feito com &hearts; por David, Elias e Luana.</p>
+        </footer>
+    </main>
+    <!--importando o JavaScript-->
+    <script src="script.js"></script>
+    <script src="custom.js"></script>
+</body>
+</html>

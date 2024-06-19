@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+}
+
+main {
+    background-color: rgb(221, 241, 247);
+}
+
+/* ANIMAÇÃO ROLAGEM SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* BARRA DE ROLAGEM PERSONALIZADA */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: lightgray;
+}
+
+/* MENU DE NAVEGAÇÃO - HEADER */
+header {
+    width: 100%;
+    background-color: #5bc2e7;
+    box-shadow: 0px 3px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+/*ESTILO BARRA MENU*/
+.nav-bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    padding-right: 80px;
+}
+
+.menu a {
+    color: #fff;
+    /* Cor do texto */
+    padding: 10px;
+    /* Preenchimento interno */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Transição suave de cor */
+    text-align: center;
+}
+
+.menu a:hover {
+    color: #11111f;
+    /* Cor ao passar o mouse */
+}
+
+.logo {
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    padding: 10px;
+    padding-left: 80px;
+}
+
+/*escondendo icone menu*/
+.mobile-menu-icon {
+    display: none;
+}
+
+/*escondendo lista menu*/
+.mobile-menu {
+    display: none;
+}
+
+/* BACKGROUND HOME */
+#home {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #11111f;
+    height: calc(100vh + 30px);
+}
+.imgTech {
+    display: flex; /* Utiliza flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    width: 100vw; /* Faz a div ter a largura da tela */
+    height: auto; /* Ajusta a altura automaticamente */
+}
+
+.imgTech img {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    border-radius: 0;
+}
+
+/* SEGURANCA ONLINE */
+#seg-online {
+    text-align: center;
+    /* Centraliza o conteúdo horizontalmente */
+    min-height: calc(90vh - 80px);
+    /* Altura mínima menos a altura do cabeçalho */
+    width: 100%;
+    /* Largura total da seção */
+    display: flex;
+    /* Usa um layout flexível */
+    align-items: center;
+    flex-direction: column;
+    /* Orientação das linhas dos itens flexíveis */
+    justify-content: center;
+    /* Alinha os itens no centro vertical */
+    gap: 20px;
+    /* Adicionando preenchimento superior e inferior */
+    scroll-margin-top: 80px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */    
+}
+
+#seg-online h1 {
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+/* CONTEUDO CARDS */
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Três cartões por linha */
+    gap: 50px;
+    /* Espaçamento entre os cartões */
+    justify-content: center;
+    /* Centraliza os cartões horizontalmente */
+    padding: 0 50px;
+    /* Adicionando preenchimento lateral */
+}
+
+.card {
+    display: flex;
+    /* Utiliza o modelo flexbox para organizar os elementos internos */
+    flex-direction: column;
+    /* Organiza os elementos internos em uma coluna */
+    align-items: center;
+    /* Centraliza os elementos verticalmente */
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse os limites do cartão */
+    max-width: 300px;
+    /* Largura máxima dos cartões */
+}
+
+.card img {
+    width: 100%;
+    /* Ajusta a largura da imagem para preencher o cartão */
+    height: 200px;
+    /* Mantém a proporção da imagem */
+    border-radius: 15px 15px 0 0;
+    /* Bordas arredondadas apenas na parte superior */
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 20px 10px;
+    /* Margem superior, direita e inferior */
+}
+
+.card p {
+    font-size: 16px;
+    margin: 0 20px 10px;
+    /* Margem superior, direita e inferior */
+}
+
+/* ESTILO BOTOES CARDS */
+.card .saiba-mais {
+    display: inline;
+    background-color: #29115d;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    /* Adiciona margem superior automática para empurrar o botão para a parte inferior */
+    margin-bottom: 10px;
+    /* distancia do botão para o final do card */
+}
+
+.card .saiba-mais:hover {
+    background-color: #1a0a3a;
+}
+
+/* CONFI PADRÃO PARAGRAFOS */
+section#conteudo p, section#conteudo2 p,
+section#conteudo3 p, section#conteudo4 p,
+section#conteudo5 p, section#conteudo6 p
+{
+    font-size: 20px;
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+/* CONTEUDO 1 - VPN */
+section#conteudo {
+    text-align: center;
+    height: auto;
+    /* Altura automática para acomodar o conteúdo */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CONTEUDO 2 - ANTIVIRUS */
+section#conteudo2 {
+    text-align: center;
+    height: auto;
+    /* Altura automática para acomodar o conteúdo */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+/* CONTEUDO 3 - GERENCIADOR DE SENHA */
+section#conteudo3 {
+    text-align: center;
+    height: auto;
+    /* Altura automática para acomodar o conteúdo */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+/* CONTEUDO 4 - SENHAS */
+section#conteudo4 {
+    text-align: center;
+    height: auto;
+    /* Altura automática para acomodar o conteúdo */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+/* LISTA CONTEUDO 4 - SENHAS */
+#conteudo4 ol {
+    text-align: left;
+    max-width: 55%;
+}
+
+/* CONTEUDO 5 - PHISHING */
+section#conteudo5 {
+    text-align: center;
+    height: auto;
+    /* Altura automática para acomodar o conteúdo */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+
+/* LISTA CONTEUDO 5 - PHISHING */
+#conteudo5 ol {
+    text-align: left;
+    max-width: 55%;
+}
+
+/* CONTEUDO 6 - WIFI  */
+section#conteudo6 {
+    text-align: center;
+    height: auto;
+    /* Altura automática para acomodar o conteúdo */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+#conteudo6 ol {
+    text-align: left;
+    max-width: 55%;
+}
+
+/* CONFIG PADRÃO PARA TODAS AS IMG DOS CONTEUDOS */
+section img {
+    width: 400px;
+    border-radius: 5%;
+}
+
+/* LINHA HORIZONTAL APOS CADA #CONTEUDO */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 60%;
+    margin: 60px auto 60px; /* Altera a distância dos conteúdos */
+}
+
+/* FORMULARIO GOOGLE */
+#form-google{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    scroll-margin-top: 120px;
+}
+
+.form-h2{
+    text-align: center;
+}
+
+.form-h2 h2, button{
+    padding-bottom: 16px;
+}
+
+.form-h2 h3{
+    padding-top: 26px;
+}
+
+.form-h2 .button{
+    border-radius: 8px;
+    color: white;
+    background-color: #5bc2e7;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid white;
+}
+
+.form-h2 .button:hover{
+    color: #5bc2e7;
+    background-color: white;
+    border: 1px solid #5bc2e7;
+}
+
+iframe {
+    width: 700px; 
+    height: 70vh; 
+    border: none; 
+}
+
+/* CONTEUDO SOBRE NÓS */
+section#sobre-nos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+#sobre-nos p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 20px;
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sobre-nos {
+    text-align: left;
+}
+
+#sobre-nos ul {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 55%; /* Define uma largura máxima para a lista */
+    margin-left: 0; /* Centraliza a lista na tela */
+}
+
+#sobre-nos ul li {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* CONTATO */
+section#contact {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    scroll-margin-top: 120px;
+    /* Controla o tanto que vai aparecer do conteúdo ao clicar em menus */
+}
+
+/* FORMULÁRIO DE CONTATO */
+.contato {
+    background-color:#5bc2e7;
+    border: 3px solid white;
+    padding: 30px 18px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 90px; /* Distancia até o footer */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 400px;
+    padding: 5px 20px;
+}
+
+#contact h2 {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: white;
+}
+
+#contact label {
+    color: white;
+    text-align: left;
+}
+
+input,
+textarea,
+button {
+	border: none;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    background-color: rgb(244, 251, 253);
+}
+
+#contact form input:focus {
+    background-color: white;
+}
+
+#contact form textarea:focus {
+    background-color: white;
+}
+
+#contact form button {
+    border-radius: 9px;
+    background-color: #4da6ff;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-top: 15px;
+    margin-bottom: 14px;
+}
+
+#contact form button:hover {
+    opacity: 1;
+    background-color: #4985c0;
+}
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 20px;
+    height: 80px;
+    bottom: 0;
+    z-index: 999;
+    background-color: #5bc2e7;
+    width: 100%;
+    color: #ffffff;
+    /* adicionado para tornar o texto do rodapé branco */
+}
+
+/*DEFININDO RESPONSIVIDADE*/
+@media screen and (max-width: 1100px) {
+    main {
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .nav-bar {
+        padding: 0.6rem 1rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 20px;
+        width: 150px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+    }
+
+    .mobile-menu ul li {
+        display: inline-flex;
+        padding: 18px 10px;
+        margin-top: -20px;
+    }
+
+    .mobile-menu ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+
+    .mobile-menu a:hover {
+        color: #29115d;
+    }
+
+    /*class open para dar interação no botão do menu, utilizado no js*/
+    .open {
+        display: block;
+    }
+
+    section#home {
+        height: 720px;
+        min-width: 400px;
+    }
+
+    .content-cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* 1 coluna por linha */
+    }
+
+    iframe {
+        width: 600px; 
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .content-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mobile-menu {
+        font-size: 13px;
+    }
+
+    .mobile-menu ul li {
+        display: inline-flex;
+        padding: 18px 6px;
+    }
+
+    section#conteudo p, section#conteudo2 p,
+    section#conteudo3 p, section#conteudo4 p,
+    section#conteudo5 p, section#conteudo6 p{
+        width: 80%;
+    }
+
+    section#conteudo h3, section#conteudo2 h3,
+    section#conteudo3 h3, section#conteudo4 h3,
+    section#conteudo5 h3, section#conteudo6 h3{
+        width: 80%;
+    }
+
+    section#conteudo img, section#conteudo2 img,
+    section#conteudo3 img, section#conteudo4 img,
+    section#conteudo5 img, section#conteudo6 img{
+        width: 85%;
+    }
+
+    #conteudo4 ol, #conteudo5 ol,
+    #conteudo6 ol {
+        text-align: left;
+        max-width: 68%;
+    }
+
+    #sobre-nos p{
+        font-size: 20px;
+        width: 80%;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+
+    #sobre-nos ul{
+        max-width: 68%;
+    }
+
+    #sobre-nos ul li{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+
+    #contact {
+        width: 85%;
+    }
+
+    #contact form {
+        max-width: 300px;
+        align-items: center;
+        height: 400px;
+    }
+
+    #contact h2{
+        margin-bottom: 6px;
+        margin-top: 6px;
+    }
+
+    #contact input,
+    #contact textarea,
+    #contact button {
+        width: 280px;
+    }
+
+    iframe {
+        width: 320px; 
+    }
+}
